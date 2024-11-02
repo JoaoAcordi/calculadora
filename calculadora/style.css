@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#tela {
+    position: relative;
+}
+
+#hora{
+    position: absolute;
+    top: 22px;
+    left: 53px;
+    width: 77%;
+    color: #fff;
+}
+
+#resultado {
+    position: absolute;
+    top: 161px;
+    left: 26px;
+    width: 77%;
+}
+
+#botoes {
+    position: absolute;
+    top: 240px;
+    left: 46px;
+}
+
+#botoes table {
+    border-collapse: collapse;
+}
+
+#botoes td {
+    padding: 5px;
+}
+
+.botao button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 30px;
+    border: none;
+    color: white; /* Cor do texto do botão */
+    cursor: pointer;
+      /*Cor padrão para botões de números e outros */
+}
+
+#result {
+    width: 100%;
+    height: 80px;
+    font-size: 80px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    text-align: right;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+.botao button:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Efeito de hover opcional */
+}

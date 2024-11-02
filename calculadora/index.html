@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="tela">
+            <img src="celulares.png" alt="Celulares">
+            <div id="hora">14:04</div>
+            <div id="resultado"><input type="text" id="result" value="0" maxlength="6"></div>
+            <div id="botoes"> 
+                <table>
+                    <tr>
+                        <td><div class="botao" onclick="apagar()"><button type="button" id="apagar" style="background-color: #a6a6a6; color: black;">AC</button></div></td>
+                        <td><div class="botao" onclick=""><button type="button" style="background-color: #a6a6a6; color: black;">+/-</button></div></td>
+                        <td><div class="botao" onclick="porcentagem()"><button type="button" style="background-color: #a6a6a6; color: black;">%</button></div></td>
+                        <td><div class="botao" onclick="adicionarsinal(1)"><button type="button" id="divisao" style="background-color: #ff9f0a;">÷</button></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="botao" onclick="numero += '7', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">7</button></div></td>
+                        <td><div class="botao" onclick="numero += '8', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">8</button></div></td>
+                        <td><div class="botao" onclick="numero += '9', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">9</button></div></td>
+                        <td><div class="botao" onclick="adicionarsinal(2)"><button type="button" id="multiplicacao" style="background-color: #ff9f0a;">x</button></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="botao" onclick="numero += '4', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">4</button></div></td>
+                        <td><div class="botao" onclick="numero += '5', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">5</button></div></td>
+                        <td><div class="botao" onclick="numero += '6', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">6</button></div></td>
+                        <td><div class="botao" onclick="adicionarsinal(3)"><button type="button" id="menos" style="background-color: #ff9f0a;">-</button></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="botao" onclick="numero += '1', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">1</button></div></td>
+                        <td><div class="botao" onclick="numero += '2', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">2</button></div></td>
+                        <td><div class="botao" onclick="numero += '3', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">3</button></div></td>
+                        <td><div class="botao" onclick="adicionarsinal(4)"><button type="button" id="mais" style="background-color: #ff9f0a;">+</button></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="botao" onclick="numero += '0', adicionarnumeros(numero)"><button type="button" style="background-color: #333333;">0</button></div></td>
+                        <td><div class="botao" onclick=""><button type="button" style="background-color: #333333;"><br></button></div></td>
+                        <td><div class="botao" onclick="numero += '.', console.log(numero)"><button type="button" style="background-color: #333333;">.</button></div></td>
+                        <td><div class="botao" onclick="calculo()"><button type="button" style="background-color: #ff9f0a;">=</button></div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
